@@ -425,6 +425,8 @@ PRODUCT_COPY_FILES += \
     vendor/LYF/mobee01a/proprietary/vendor/lib/libmmqjpeg_codec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmqjpeg_codec.so \
     vendor/LYF/mobee01a/proprietary/vendor/lib/liboemcamera.so:$(TARGET_COPY_OUT_VENDOR)/lib/liboemcamera.so \
     vendor/LYF/mobee01a/proprietary/vendor/lib/libqomx_jpegenc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqomx_jpegenc.so \
+    vendor/LYF/mobee01a/proprietary/vendor/lib/vndk-sp/libcutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/vndk-sp/libcutils.so \
+    vendor/LYF/mobee01a/proprietary/vendor/lib/vndk/libbinder.so:$(TARGET_COPY_OUT_VENDOR)/lib/vndk/libbinder.so \
     vendor/LYF/mobee01a/proprietary/vendor/lib64/libactuator_lc898212.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libactuator_lc898212.so \
     vendor/LYF/mobee01a/proprietary/vendor/lib64/libactuator_lc898212_camcorder.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libactuator_lc898212_camcorder.so \
     vendor/LYF/mobee01a/proprietary/vendor/lib64/libactuator_lc898212_camera.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libactuator_lc898212_camera.so \
