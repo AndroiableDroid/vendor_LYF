@@ -425,6 +425,7 @@ PRODUCT_COPY_FILES += \
     vendor/LYF/mobee01a/proprietary/vendor/lib/libmmqjpeg_codec.so:system/vendor/lib/libmmqjpeg_codec.so \
     vendor/LYF/mobee01a/proprietary/vendor/lib/liboemcamera.so:system/vendor/lib/liboemcamera.so \
     vendor/LYF/mobee01a/proprietary/vendor/lib/libqomx_jpegenc.so:system/vendor/lib/libqomx_jpegenc.so \
+    vendor/LYF/mobee01a/proprietary/vendor/lib/sensors.native.so:system/vendor/lib/sensors.native.so \
     vendor/LYF/mobee01a/proprietary/vendor/lib64/libactuator_lc898212.so:system/vendor/lib64/libactuator_lc898212.so \
     vendor/LYF/mobee01a/proprietary/vendor/lib64/libactuator_lc898212_camcorder.so:system/vendor/lib64/libactuator_lc898212_camcorder.so \
     vendor/LYF/mobee01a/proprietary/vendor/lib64/libactuator_lc898212_camera.so:system/vendor/lib64/libactuator_lc898212_camera.so \
@@ -508,7 +509,8 @@ PRODUCT_COPY_FILES += \
     vendor/LYF/mobee01a/proprietary/vendor/lib64/libmmcamera_ov8858_q8v19w_30.so:system/vendor/lib64/libmmcamera_ov8858_q8v19w_30.so \
     vendor/LYF/mobee01a/proprietary/vendor/lib64/libmmcamera_s5k5e2_F5E2YAU.so:system/vendor/lib64/libmmcamera_s5k5e2_F5E2YAU.so \
     vendor/LYF/mobee01a/proprietary/vendor/lib64/libmmcamera_s5k5e2_SFS5C7597.so:system/vendor/lib64/libmmcamera_s5k5e2_SFS5C7597.so \
-    vendor/LYF/mobee01a/proprietary/vendor/lib64/libmmcamera_t4kb3.so:system/vendor/lib64/libmmcamera_t4kb3.so
+    vendor/LYF/mobee01a/proprietary/vendor/lib64/libmmcamera_t4kb3.so:system/vendor/lib64/libmmcamera_t4kb3.so \
+    vendor/LYF/mobee01a/proprietary/vendor/lib64/sensors.native.so:system/vendor/lib64/sensors.native.so
 
 PRODUCT_PACKAGES += \
     libts_detected_face_hal \
