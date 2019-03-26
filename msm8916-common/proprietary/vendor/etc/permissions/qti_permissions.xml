@@ -5,9 +5,10 @@
 -->
 <permissions>
     <permission name="com.qti.permission.DIAG">
-        <group gid="oem_2901" />
+        <group gid="oem_2950" />
     </permission>
     <permission name="com.qti.permission.AUDIO">
         <group gid="audio" />
     </permission>
 </permissions>
+
