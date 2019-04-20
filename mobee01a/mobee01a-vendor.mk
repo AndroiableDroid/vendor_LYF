@@ -431,6 +431,7 @@ PRODUCT_COPY_FILES += \
     vendor/LYF/mobee01a/proprietary/vendor/lib64/libactuator_rohm_bu64243gwz_t4kb3.so:system/vendor/lib64/libactuator_rohm_bu64243gwz_t4kb3.so \
     vendor/LYF/mobee01a/proprietary/vendor/lib64/libactuator_rohm_bu64243gwz_t4kb3_camcorder.so:system/vendor/lib64/libactuator_rohm_bu64243gwz_t4kb3_camcorder.so \
     vendor/LYF/mobee01a/proprietary/vendor/lib64/libactuator_rohm_bu64243gwz_t4kb3_camera.so:system/vendor/lib64/libactuator_rohm_bu64243gwz_t4kb3_camera.so \
+    vendor/LYF/mobee01a/proprietary/vendor/lib64/libcalmodule_gyroscope.so:system/vendor/lib64/libcalmodule_gyroscope.so \
     vendor/LYF/mobee01a/proprietary/vendor/lib64/libchromatix_imx135_liveshot.so:system/vendor/lib64/libchromatix_imx135_liveshot.so \
     vendor/LYF/mobee01a/proprietary/vendor/lib64/libchromatix_imx214_common.so:system/vendor/lib64/libchromatix_imx214_common.so \
     vendor/LYF/mobee01a/proprietary/vendor/lib64/libchromatix_imx214_default_video.so:system/vendor/lib64/libchromatix_imx214_default_video.so \
