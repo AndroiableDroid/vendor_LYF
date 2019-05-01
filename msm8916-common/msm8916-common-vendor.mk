@@ -448,6 +448,7 @@ PRODUCT_PACKAGES += \
     dpmserviceapp \
     ims \
     qcrilmsgtunnel \
+    uceShimService \
     TimeService \
     imssettings \
     QtiTelephonyServicelibrary \
