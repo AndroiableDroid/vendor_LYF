@@ -382,6 +382,7 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     vendor.qti.hardware.fm@1.0 \
+    vendor.qti.hardware.iop \
     libtime_genoff \
     com.quicinc.cne.api@1.0 \
     com.quicinc.cne.api@1.1 \
