@@ -269,11 +269,11 @@ include $(CLEAR_VARS)
 LOCAL_MODULE := qti-telephony-common
 LOCAL_MODULE_OWNER := LYF
 LOCAL_SRC_FILES := proprietary/product/framework/qti-telephony-common.jar
-LOCAL_MODULE_PATH := $(TARGET_OUT_PRODUCT)/framework
 LOCAL_CERTIFICATE := platform
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := JAVA_LIBRARIES
 LOCAL_MODULE_SUFFIX := $(COMMON_JAVA_PACKAGE_SUFFIX)
+LOCAL_PRODUCT_MODULE := true
 include $(BUILD_PREBUILT)
 
 endif
