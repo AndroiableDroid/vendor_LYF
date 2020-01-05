@@ -93,6 +93,7 @@ PRODUCT_COPY_FILES += \
     vendor/LYF/panda01a/proprietary/etc/permissions/com.qualcomm.location.xml:system/etc/permissions/com.qualcomm.location.xml \
     vendor/LYF/panda01a/proprietary/etc/permissions/com.quicinc.cne.xml:system/etc/permissions/com.quicinc.cne.xml \
     vendor/LYF/panda01a/proprietary/etc/permissions/dpmapi.xml:system/etc/permissions/dpmapi.xml \
+    vendor/LYF/panda01a/proprietary/etc/permissions/imscm.xml:system/etc/permissions/imscm.xml \
     vendor/LYF/panda01a/proprietary/etc/permissions/qcnvitems.xml:system/etc/permissions/qcnvitems.xml \
     vendor/LYF/panda01a/proprietary/etc/permissions/qcrilhook.xml:system/etc/permissions/qcrilhook.xml \
     vendor/LYF/panda01a/proprietary/framework/ConnectivityExt.jar:system/framework/ConnectivityExt.jar \
@@ -101,6 +102,8 @@ PRODUCT_COPY_FILES += \
     vendor/LYF/panda01a/proprietary/framework/com.qti.location.sdk.jar:system/framework/com.qti.location.sdk.jar \
     vendor/LYF/panda01a/proprietary/framework/com.quicinc.cne.jar:system/framework/com.quicinc.cne.jar \
     vendor/LYF/panda01a/proprietary/framework/dpmapi.jar:system/framework/dpmapi.jar \
+    vendor/LYF/panda01a/proprietary/framework/imscmlibrary.jar:system/framework/imscmlibrary.jar \
+    vendor/LYF/panda01a/proprietary/framework/rcsimssettings.jar:system/framework/rcsimssettings.jar \
     vendor/LYF/panda01a/proprietary/framework/tcmclient.jar:system/framework/tcmclient.jar \
     vendor/LYF/panda01a/proprietary/lib/hw/camera.msm8952.so:system/lib/hw/camera.msm8952.so \
     vendor/LYF/panda01a/proprietary/lib/libimscamera_jni.so:system/lib/libimscamera_jni.so \
@@ -108,8 +111,8 @@ PRODUCT_COPY_FILES += \
     vendor/LYF/panda01a/proprietary/lib/libmmcamera_interface.so:system/lib/libmmcamera_interface.so \
     vendor/LYF/panda01a/proprietary/lib/libmmjpeg_interface.so:system/lib/libmmjpeg_interface.so \
     vendor/LYF/panda01a/proprietary/lib/libqomx_core.so:system/lib/libqomx_core.so \
-    vendor/LYF/panda01a/proprietary/lib64/libimscamera_jni.so:system/lib64/libimscamera_jni.so \
-    vendor/LYF/panda01a/proprietary/lib64/libimsmedia_jni.so:system/lib64/libimsmedia_jni.so \
+    vendor/LYF/panda01a/proprietary/vendor/lib64/libimscamera_jni.so:system/vendor/lib64/libimscamera_jni.so \
+    vendor/LYF/panda01a/proprietary/vendor/lib64/libimsmedia_jni.so:system/vendor/lib64/libimsmedia_jni.so \
     vendor/LYF/panda01a/proprietary/lib64/libwcnss_qmi.so:system/lib64/libwcnss_qmi.so \
     vendor/LYF/panda01a/proprietary/vendor/bin/mm-pp-daemon:system/vendor/bin/mm-pp-daemon \
     vendor/LYF/panda01a/proprietary/vendor/bin/perfd:system/vendor/bin/perfd \
