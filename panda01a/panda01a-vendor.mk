@@ -119,6 +119,7 @@ PRODUCT_COPY_FILES += \
     vendor/LYF/panda01a/proprietary/vendor/bin/perfd:system/vendor/bin/perfd \
     vendor/LYF/panda01a/proprietary/vendor/bin/slim_daemon:system/vendor/bin/slim_daemon \
     vendor/LYF/panda01a/proprietary/vendor/bin/thermal-engine:system/vendor/bin/thermal-engine \
+    vendor/LYF/panda01a/proprietary/vendor/lib/drm/libdrmwvmplugin.so:system/vendor/lib/drm/libdrmwvmplugin.so \
     vendor/LYF/panda01a/proprietary/vendor/lib/egl/eglSubDriverAndroid.so:system/vendor/lib/egl/eglSubDriverAndroid.so \
     vendor/LYF/panda01a/proprietary/vendor/lib/egl/libEGL_adreno.so:system/vendor/lib/egl/libEGL_adreno.so \
     vendor/LYF/panda01a/proprietary/vendor/lib/egl/libGLESv1_CM_adreno.so:system/vendor/lib/egl/libGLESv1_CM_adreno.so \
@@ -164,6 +165,7 @@ PRODUCT_COPY_FILES += \
     vendor/LYF/panda01a/proprietary/vendor/lib/libQtiTether.so:system/vendor/lib/libQtiTether.so \
     vendor/LYF/panda01a/proprietary/vendor/lib/libRSDriver_adreno.so:system/vendor/lib/libRSDriver_adreno.so \
     vendor/LYF/panda01a/proprietary/vendor/lib/libTimeService.so:system/vendor/lib/libTimeService.so \
+    vendor/LYF/panda01a/proprietary/vendor/lib/libWVStreamControlAPI_L3.so:system/vendor/lib/libWVStreamControlAPI_L3.so \
     vendor/LYF/panda01a/proprietary/vendor/lib/libacdb-fts.so:system/vendor/lib/libacdb-fts.so \
     vendor/LYF/panda01a/proprietary/vendor/lib/libacdbloader.so:system/vendor/lib/libacdbloader.so \
     vendor/LYF/panda01a/proprietary/vendor/lib/libacdbrtac.so:system/vendor/lib/libacdbrtac.so \
@@ -186,6 +188,7 @@ PRODUCT_COPY_FILES += \
     vendor/LYF/panda01a/proprietary/vendor/lib/libbccQTI.so:system/vendor/lib/libbccQTI.so \
     vendor/LYF/panda01a/proprietary/vendor/lib/libc2d30-a5xx.so:system/vendor/lib/libc2d30-a5xx.so \
     vendor/LYF/panda01a/proprietary/vendor/lib/libc2d30_bltlib.so:system/vendor/lib/libc2d30_bltlib.so \
+    vendor/LYF/panda01a/proprietary/vendor/lib/libchromaflash.so:system/vendor/lib/libchromaflash.so \
     vendor/LYF/panda01a/proprietary/vendor/lib/libchromatix_csidtg_common.so:system/vendor/lib/libchromatix_csidtg_common.so \
     vendor/LYF/panda01a/proprietary/vendor/lib/libchromatix_csidtg_cpp_preview.so:system/vendor/lib/libchromatix_csidtg_cpp_preview.so \
     vendor/LYF/panda01a/proprietary/vendor/lib/libchromatix_csidtg_postproc.so:system/vendor/lib/libchromatix_csidtg_postproc.so \
@@ -635,6 +638,8 @@ PRODUCT_COPY_FILES += \
     vendor/LYF/panda01a/proprietary/vendor/lib/libjpegdmahw.so:system/vendor/lib/libjpegdmahw.so \
     vendor/LYF/panda01a/proprietary/vendor/lib/libjpegehw.so:system/vendor/lib/libjpegehw.so \
     vendor/LYF/panda01a/proprietary/vendor/lib/liblbs_core.so:system/vendor/lib/liblbs_core.so \
+    vendor/LYF/panda01a/proprietary/vendor/lib/libllvd_smore.so:system/vendor/lib/libllvd_smore.so \
+    vendor/LYF/panda01a/proprietary/vendor/lib/libllvd_sw_tnr.so:system/vendor/lib/libllvd_sw_tnr.so \
     vendor/LYF/panda01a/proprietary/vendor/lib/libllvm-glnext.so:system/vendor/lib/libllvm-glnext.so \
     vendor/LYF/panda01a/proprietary/vendor/lib/libllvm-qcom.so:system/vendor/lib/libllvm-qcom.so \
     vendor/LYF/panda01a/proprietary/vendor/lib/libloc_ext.so:system/vendor/lib/libloc_ext.so \
@@ -763,6 +768,7 @@ PRODUCT_COPY_FILES += \
     vendor/LYF/panda01a/proprietary/vendor/lib/libmmqjpeg_codec.so:system/vendor/lib/libmmqjpeg_codec.so \
     vendor/LYF/panda01a/proprietary/vendor/lib/libmmqjpegdma.so:system/vendor/lib/libmmqjpegdma.so \
     vendor/LYF/panda01a/proprietary/vendor/lib/libois_lc898122.so:system/vendor/lib/libois_lc898122.so \
+    vendor/LYF/panda01a/proprietary/vendor/lib/liboptizoom.so:system/vendor/lib/liboptizoom.so \
     vendor/LYF/panda01a/proprietary/vendor/lib/libperipheral_client.so:system/vendor/lib/libperipheral_client.so \
     vendor/LYF/panda01a/proprietary/vendor/lib/libqcci_legacy.so:system/vendor/lib/libqcci_legacy.so \
     vendor/LYF/panda01a/proprietary/vendor/lib/libqdi.so:system/vendor/lib/libqdi.so \
@@ -784,24 +790,30 @@ PRODUCT_COPY_FILES += \
     vendor/LYF/panda01a/proprietary/vendor/lib/librs_adreno.so:system/vendor/lib/librs_adreno.so \
     vendor/LYF/panda01a/proprietary/vendor/lib/librs_adreno_sha1.so:system/vendor/lib/librs_adreno_sha1.so \
     vendor/LYF/panda01a/proprietary/vendor/lib/libscale.so:system/vendor/lib/libscale.so \
+    vendor/LYF/panda01a/proprietary/vendor/lib/libseemore.so:system/vendor/lib/libseemore.so \
     vendor/LYF/panda01a/proprietary/vendor/lib/libsensor1.so:system/vendor/lib/libsensor1.so \
     vendor/LYF/panda01a/proprietary/vendor/lib/libsensor_reg.so:system/vendor/lib/libsensor_reg.so \
     vendor/LYF/panda01a/proprietary/vendor/lib/libsmemlog.so:system/vendor/lib/libsmemlog.so \
     vendor/LYF/panda01a/proprietary/vendor/lib/libsmwrapper.so:system/vendor/lib/libsmwrapper.so \
     vendor/LYF/panda01a/proprietary/vendor/lib/libthermalclient.so:system/vendor/lib/libthermalclient.so \
+    vendor/LYF/panda01a/proprietary/vendor/lib/libtrueportrait.so:system/vendor/lib/libtrueportrait.so \
     vendor/LYF/panda01a/proprietary/vendor/lib/libts_detected_face_hal.so:system/vendor/lib/libts_detected_face_hal.so \
     vendor/LYF/panda01a/proprietary/vendor/lib/libts_detected_face_jni.so:system/vendor/lib/libts_detected_face_jni.so \
     vendor/LYF/panda01a/proprietary/vendor/lib/libts_face_beautify_hal.so:system/vendor/lib/libts_face_beautify_hal.so \
     vendor/LYF/panda01a/proprietary/vendor/lib/libts_face_beautify_jni.so:system/vendor/lib/libts_face_beautify_jni.so \
+    vendor/LYF/panda01a/proprietary/vendor/lib/libubifocus.so:system/vendor/lib/libubifocus.so \
     vendor/LYF/panda01a/proprietary/vendor/lib/libulp2.so:system/vendor/lib/libulp2.so \
     vendor/LYF/panda01a/proprietary/vendor/lib/libvendorconn.so:system/vendor/lib/libvendorconn.so \
     vendor/LYF/panda01a/proprietary/vendor/lib/libvoice-svc.so:system/vendor/lib/libvoice-svc.so \
     vendor/LYF/panda01a/proprietary/vendor/lib/libwms.so:system/vendor/lib/libwms.so \
     vendor/LYF/panda01a/proprietary/vendor/lib/libwqe.so:system/vendor/lib/libwqe.so \
+    vendor/LYF/panda01a/proprietary/vendor/lib/libwvdrm_L3.so:system/vendor/lib/libwvdrm_L3.so \
+    vendor/LYF/panda01a/proprietary/vendor/lib/libwvm.so:system/vendor/lib/libwvm.so \
     vendor/LYF/panda01a/proprietary/vendor/lib/libxml.so:system/vendor/lib/libxml.so \
     vendor/LYF/panda01a/proprietary/vendor/lib/libxt_native.so:system/vendor/lib/libxt_native.so \
     vendor/LYF/panda01a/proprietary/vendor/lib/libxtadapter.so:system/vendor/lib/libxtadapter.so \
     vendor/LYF/panda01a/proprietary/vendor/lib/libxtwifi_ulp_adaptor.so:system/vendor/lib/libxtwifi_ulp_adaptor.so \
+    vendor/LYF/panda01a/proprietary/vendor/lib/mediadrm/libwvdrmengine.so:system/vendor/lib/mediadrm/libwvdrmengine.so \
     vendor/LYF/panda01a/proprietary/vendor/lib/sensor_calibrate.so:system/vendor/lib/sensor_calibrate.so \
     vendor/LYF/panda01a/proprietary/vendor/lib/sensors.ssc.so:system/vendor/lib/sensors.ssc.so \
     vendor/LYF/panda01a/proprietary/vendor/lib/soundfx/libqcbassboost.so:system/vendor/lib/soundfx/libqcbassboost.so \
