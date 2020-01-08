@@ -96,6 +96,7 @@ PRODUCT_COPY_FILES += \
     vendor/LYF/panda01a/proprietary/etc/permissions/imscm.xml:system/etc/permissions/imscm.xml \
     vendor/LYF/panda01a/proprietary/etc/permissions/qcnvitems.xml:system/etc/permissions/qcnvitems.xml \
     vendor/LYF/panda01a/proprietary/etc/permissions/qcrilhook.xml:system/etc/permissions/qcrilhook.xml \
+    vendor/LYF/panda01a/proprietary/etc/permissions/qti_permissions.xml:system/etc/permissions/qti_permissions.xml \
     vendor/LYF/panda01a/proprietary/framework/ConnectivityExt.jar:system/framework/ConnectivityExt.jar \
     vendor/LYF/panda01a/proprietary/framework/cneapiclient.jar:system/framework/cneapiclient.jar \
     vendor/LYF/panda01a/proprietary/framework/com.qti.dpmframework.jar:system/framework/com.qti.dpmframework.jar \
