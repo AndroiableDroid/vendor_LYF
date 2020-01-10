@@ -33,7 +33,6 @@ PRODUCT_COPY_FILES += \
     vendor/LYF/panda01a/proprietary/bin/netmgrd:system/bin/netmgrd \
     vendor/LYF/panda01a/proprietary/bin/pm-proxy:system/bin/pm-proxy \
     vendor/LYF/panda01a/proprietary/bin/pm-service:system/bin/pm-service \
-    vendor/LYF/panda01a/proprietary/bin/port-bridge:system/bin/port-bridge \
     vendor/LYF/panda01a/proprietary/bin/qmuxd:system/bin/qmuxd \
     vendor/LYF/panda01a/proprietary/bin/qseecomd:system/bin/qseecomd \
     vendor/LYF/panda01a/proprietary/bin/radish:system/bin/radish \
@@ -108,12 +107,13 @@ PRODUCT_COPY_FILES += \
     vendor/LYF/panda01a/proprietary/framework/com.qti.location.sdk.jar:system/framework/com.qti.location.sdk.jar \
     vendor/LYF/panda01a/proprietary/framework/com.quicinc.cne.jar:system/framework/com.quicinc.cne.jar \
     vendor/LYF/panda01a/proprietary/framework/dpmapi.jar:system/framework/dpmapi.jar \
-    vendor/LYF/panda01a/proprietary/framework/embmslibrary.jar:system/framework/embmslibrary.jar \
     vendor/LYF/panda01a/proprietary/framework/imscmlibrary.jar:system/framework/imscmlibrary.jar \
     vendor/LYF/panda01a/proprietary/framework/qti-telephony-common.jar:system/framework/qti-telephony-common.jar \
     vendor/LYF/panda01a/proprietary/framework/rcsimssettings.jar:system/framework/rcsimssettings.jar \
     vendor/LYF/panda01a/proprietary/framework/tcmclient.jar:system/framework/tcmclient.jar \
     vendor/LYF/panda01a/proprietary/lib/hw/camera.msm8952.so:system/lib/hw/camera.msm8952.so \
+    vendor/LYF/panda01a/proprietary/lib/libimscamera_jni.so:system/lib/libimscamera_jni.so \
+    vendor/LYF/panda01a/proprietary/lib/libimsmedia_jni.so:system/lib/libimsmedia_jni.so \
     vendor/LYF/panda01a/proprietary/lib/libmm-qcamera.so:system/lib/libmm-qcamera.so \
     vendor/LYF/panda01a/proprietary/lib/libmmcamera_interface.so:system/lib/libmmcamera_interface.so \
     vendor/LYF/panda01a/proprietary/lib/libmmjpeg_interface.so:system/lib/libmmjpeg_interface.so \
@@ -137,6 +137,25 @@ PRODUCT_COPY_FILES += \
     vendor/LYF/panda01a/proprietary/vendor/lib/hw/activity_recognition.msm8952.so:system/vendor/lib/hw/activity_recognition.msm8952.so \
     vendor/LYF/panda01a/proprietary/vendor/lib/hw/flp.default.so:system/vendor/lib/hw/flp.default.so \
     vendor/LYF/panda01a/proprietary/vendor/lib/hw/sound_trigger.primary.msm8952.so:system/vendor/lib/hw/sound_trigger.primary.msm8952.so \
+    vendor/LYF/panda01a/proprietary/vendor/lib/lib-dplmedia.so:system/vendor/lib/lib-dplmedia.so \
+    vendor/LYF/panda01a/proprietary/vendor/lib/lib-ims-rcscmjni.so:system/vendor/lib/lib-ims-rcscmjni.so \
+    vendor/LYF/panda01a/proprietary/vendor/lib/lib-imsSDP.so:system/vendor/lib/lib-imsSDP.so \
+    vendor/LYF/panda01a/proprietary/vendor/lib/lib-imscamera.so:system/vendor/lib/lib-imscamera.so \
+    vendor/LYF/panda01a/proprietary/vendor/lib/lib-imsdpl.so:system/vendor/lib/lib-imsdpl.so \
+    vendor/LYF/panda01a/proprietary/vendor/lib/lib-imsqimf.so:system/vendor/lib/lib-imsqimf.so \
+    vendor/LYF/panda01a/proprietary/vendor/lib/lib-imsrcs.so:system/vendor/lib/lib-imsrcs.so \
+    vendor/LYF/panda01a/proprietary/vendor/lib/lib-imsrcscm.so:system/vendor/lib/lib-imsrcscm.so \
+    vendor/LYF/panda01a/proprietary/vendor/lib/lib-imsrcscmclient.so:system/vendor/lib/lib-imsrcscmclient.so \
+    vendor/LYF/panda01a/proprietary/vendor/lib/lib-imsrcscmservice.so:system/vendor/lib/lib-imsrcscmservice.so \
+    vendor/LYF/panda01a/proprietary/vendor/lib/lib-imss.so:system/vendor/lib/lib-imss.so \
+    vendor/LYF/panda01a/proprietary/vendor/lib/lib-imsvt.so:system/vendor/lib/lib-imsvt.so \
+    vendor/LYF/panda01a/proprietary/vendor/lib/lib-imsxml.so:system/vendor/lib/lib-imsxml.so \
+    vendor/LYF/panda01a/proprietary/vendor/lib/lib-rcsimssjni.so:system/vendor/lib/lib-rcsimssjni.so \
+    vendor/LYF/panda01a/proprietary/vendor/lib/lib-rcsjni.so:system/vendor/lib/lib-rcsjni.so \
+    vendor/LYF/panda01a/proprietary/vendor/lib/lib-rtpcommon.so:system/vendor/lib/lib-rtpcommon.so \
+    vendor/LYF/panda01a/proprietary/vendor/lib/lib-rtpcore.so:system/vendor/lib/lib-rtpcore.so \
+    vendor/LYF/panda01a/proprietary/vendor/lib/lib-rtpdaemoninterface.so:system/vendor/lib/lib-rtpdaemoninterface.so \
+    vendor/LYF/panda01a/proprietary/vendor/lib/lib-rtpsl.so:system/vendor/lib/lib-rtpsl.so \
     vendor/LYF/panda01a/proprietary/vendor/lib/libC2D2.so:system/vendor/lib/libC2D2.so \
     vendor/LYF/panda01a/proprietary/vendor/lib/libCB.so:system/vendor/lib/libCB.so \
     vendor/LYF/panda01a/proprietary/vendor/lib/libI420colorconvert.so:system/vendor/lib/libI420colorconvert.so \
@@ -774,7 +793,7 @@ PRODUCT_COPY_FILES += \
     vendor/LYF/panda01a/proprietary/vendor/lib/libqomx_jpegenc_pipe.so:system/vendor/lib/libqomx_jpegenc_pipe.so \
     vendor/LYF/panda01a/proprietary/vendor/lib/libqti-perfd-client.so:system/vendor/lib/libqti-perfd-client.so \
     vendor/LYF/panda01a/proprietary/vendor/lib/libquipc_os_api.so:system/vendor/lib/libquipc_os_api.so \
-    vendor/LYF/panda01a/proprietary/vendor/lib/libquipc_os_api.so:system/vendor/lib/libquipc_os_api.so \
+    vendor/LYF/panda01a/proprietary/vendor/lib/librcc.so:system/vendor/lib/librcc.so \
     vendor/LYF/panda01a/proprietary/vendor/lib/librs_adreno.so:system/vendor/lib/librs_adreno.so \
     vendor/LYF/panda01a/proprietary/vendor/lib/librs_adreno_sha1.so:system/vendor/lib/librs_adreno_sha1.so \
     vendor/LYF/panda01a/proprietary/vendor/lib/libscale.so:system/vendor/lib/libscale.so \
@@ -792,6 +811,7 @@ PRODUCT_COPY_FILES += \
     vendor/LYF/panda01a/proprietary/vendor/lib/libubifocus.so:system/vendor/lib/libubifocus.so \
     vendor/LYF/panda01a/proprietary/vendor/lib/libulp2.so:system/vendor/lib/libulp2.so \
     vendor/LYF/panda01a/proprietary/vendor/lib/libvendorconn.so:system/vendor/lib/libvendorconn.so \
+    vendor/LYF/panda01a/proprietary/vendor/lib/libvoice-svc.so:system/vendor/lib/libvoice-svc.so \
     vendor/LYF/panda01a/proprietary/vendor/lib/libwms.so:system/vendor/lib/libwms.so \
     vendor/LYF/panda01a/proprietary/vendor/lib/libwqe.so:system/vendor/lib/libwqe.so \
     vendor/LYF/panda01a/proprietary/vendor/lib/libwvdrm_L3.so:system/vendor/lib/libwvdrm_L3.so \
@@ -915,7 +935,6 @@ PRODUCT_COPY_FILES += \
     vendor/LYF/panda01a/proprietary/vendor/lib64/libqmiservices.so:system/vendor/lib64/libqmiservices.so \
     vendor/LYF/panda01a/proprietary/vendor/lib64/libqti-perfd-client.so:system/vendor/lib64/libqti-perfd-client.so \
     vendor/LYF/panda01a/proprietary/vendor/lib64/libquipc_os_api.so:system/vendor/lib64/libquipc_os_api.so \
-    vendor/LYF/panda01a/proprietary/vendor/lib64/libquipc_os_api.so:system/vendor/lib64/libquipc_os_api.so \
     vendor/LYF/panda01a/proprietary/vendor/lib64/librcc.so:system/vendor/lib64/librcc.so \
     vendor/LYF/panda01a/proprietary/vendor/lib64/libril-qc-qmi-1.so:system/vendor/lib64/libril-qc-qmi-1.so \
     vendor/LYF/panda01a/proprietary/vendor/lib64/libril-qc-radioconfig.so:system/vendor/lib64/libril-qc-radioconfig.so \
@@ -961,5 +980,6 @@ PRODUCT_PACKAGES += \
     ims \
     qcrilmsgtunnel \
     imssettings \
+    embmslibrary \
     qcnvitems \
     qcrilhook
