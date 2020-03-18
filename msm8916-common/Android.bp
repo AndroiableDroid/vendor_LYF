@@ -1,5 +1,5 @@
 /**
- * Copyright (C) 2019 The LineageOS Project
+ * Copyright (C) 2019-2020 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -235,51 +235,9 @@ cc_prebuilt_library_shared {
 }
 
 android_app_import {
-	name: "QtiTelephonyService",
-	owner: "LYF",
-	apk: "proprietary/app/QtiTelephonyService/QtiTelephonyService.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-}
-
-android_app_import {
-	name: "uceShimService",
-	owner: "LYF",
-	apk: "proprietary/app/uceShimService/uceShimService.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-}
-
-android_app_import {
 	name: "CNEService",
 	owner: "LYF",
 	apk: "proprietary/priv-app/CNEService/CNEService.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
-}
-
-android_app_import {
-	name: "ims",
-	owner: "LYF",
-	apk: "proprietary/priv-app/ims/ims.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
-}
-
-android_app_import {
-	name: "qcrilmsgtunnel",
-	owner: "LYF",
-	apk: "proprietary/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
@@ -299,32 +257,70 @@ android_app_import {
 }
 
 android_app_import {
-	name: "imssettings",
+	name: "QtiTelephonyService",
 	owner: "LYF",
-	apk: "proprietary/vendor/app/imssettings/imssettings.apk",
+	apk: "proprietary/product/app/QtiTelephonyService/QtiTelephonyService.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
 	},
-	soc_specific: true,
+	product_specific: true,
 }
 
-dex_import {
-	name: "QtiTelephonyServicelibrary",
+android_app_import {
+	name: "datastatusnotification",
 	owner: "LYF",
-	jars: ["proprietary/framework/QtiTelephonyServicelibrary.jar"],
+	apk: "proprietary/product/app/datastatusnotification/datastatusnotification.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	product_specific: true,
 }
 
-dex_import {
-	name: "qcrilhook",
+android_app_import {
+	name: "imssettings",
 	owner: "LYF",
-	jars: ["proprietary/framework/qcrilhook.jar"],
+	apk: "proprietary/product/app/imssettings/imssettings.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	product_specific: true,
 }
 
-dex_import {
-	name: "qti-telephony-common",
+android_app_import {
+	name: "uceShimService",
 	owner: "LYF",
-	jars: ["proprietary/product/framework/qti-telephony-common.jar"],
+	apk: "proprietary/product/app/uceShimService/uceShimService.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	product_specific: true,
+}
+
+android_app_import {
+	name: "ims",
+	owner: "LYF",
+	apk: "proprietary/product/priv-app/ims/ims.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	product_specific: true,
+}
+
+android_app_import {
+	name: "qcrilmsgtunnel",
+	owner: "LYF",
+	apk: "proprietary/product/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
 	product_specific: true,
 }
 
