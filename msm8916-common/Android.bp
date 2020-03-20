@@ -279,6 +279,17 @@ android_app_import {
 }
 
 android_app_import {
+	name: "embms",
+	owner: "LYF",
+	apk: "proprietary/product/app/embms/embms.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	product_specific: true,
+}
+
+android_app_import {
 	name: "imssettings",
 	owner: "LYF",
 	apk: "proprietary/product/app/imssettings/imssettings.apk",
