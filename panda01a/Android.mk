@@ -30,17 +30,6 @@ LOCAL_MODULE_SUFFIX := .so
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := libloc_ds_api
-LOCAL_MODULE_OWNER := LYF
-LOCAL_SRC_FILES_64 := proprietary/lib64/libloc_ds_api.so
-LOCAL_SRC_FILES_32 := proprietary/lib/libloc_ds_api.so
-LOCAL_MULTILIB := both
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := SHARED_LIBRARIES
-LOCAL_MODULE_SUFFIX := .so
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
 LOCAL_MODULE := libtime_genoff
 LOCAL_MODULE_OWNER := LYF
 LOCAL_SRC_FILES_64 := proprietary/vendor/lib64/libtime_genoff.so
@@ -50,6 +39,17 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := SHARED_LIBRARIES
 LOCAL_MODULE_SUFFIX := .so
 LOCAL_VENDOR_MODULE := true
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := QtiTelephonyService
+LOCAL_MODULE_OWNER := LYF
+LOCAL_SRC_FILES := proprietary/app/QtiTelephonyService/QtiTelephonyService.apk
+LOCAL_CERTIFICATE := platform
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := APPS
+LOCAL_DEX_PREOPT := false
+LOCAL_MODULE_SUFFIX := .apk
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
@@ -89,6 +89,17 @@ include $(CLEAR_VARS)
 LOCAL_MODULE := shutdownlistener
 LOCAL_MODULE_OWNER := LYF
 LOCAL_SRC_FILES := proprietary/app/shutdownlistener/shutdownlistener.apk
+LOCAL_CERTIFICATE := platform
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := APPS
+LOCAL_DEX_PREOPT := false
+LOCAL_MODULE_SUFFIX := .apk
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := imssettings
+LOCAL_MODULE_OWNER := LYF
+LOCAL_SRC_FILES := proprietary/app/imssettings/imssettings.apk
 LOCAL_CERTIFICATE := platform
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS
@@ -157,21 +168,9 @@ LOCAL_PRIVILEGED_MODULE := true
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := imssettings
+LOCAL_MODULE := com.qti.location.sdk
 LOCAL_MODULE_OWNER := LYF
-LOCAL_SRC_FILES := proprietary/vendor/app/imssettings/imssettings.apk
-LOCAL_CERTIFICATE := platform
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := APPS
-LOCAL_DEX_PREOPT := false
-LOCAL_MODULE_SUFFIX := .apk
-LOCAL_VENDOR_MODULE := true
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := embmslibrary
-LOCAL_MODULE_OWNER := LYF
-LOCAL_SRC_FILES := proprietary/framework/embmslibrary.jar
+LOCAL_SRC_FILES := proprietary/framework/com.qti.location.sdk.jar
 LOCAL_CERTIFICATE := platform
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := JAVA_LIBRARIES
